@@ -318,17 +318,18 @@ body {
 @media (max-width: 680px) {
   body {
     padding: 16px;
+    min-height: 100dvh;
   }
 
   .box {
     flex-direction: column;
     padding: 24px 20px;
-    min-height: auto;
+    min-height: 350px;
     gap: 0;
   }
 
   .content-area {
-    min-height: auto;
+    min-height: 300px;
     position: relative;
   }
 
@@ -361,6 +362,14 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: none;
+  }
+
+  .box.show-panel .icons {
+    display: none;
+  }
+
+  .box.show-panel .panel-right {
+    display: none;
   }
 
   .pfp {
