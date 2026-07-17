@@ -8,39 +8,20 @@ function copyDiscord() {
   });
 }
 
-// titl (desktop-only: phones/touch devices skip this entirely so they
-// never attach the listener or pay for the extra compositing layer)
+// titl
 var box = document.querySelector('.box');
-var supportsTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-if (supportsTilt) {
-  var tiltTicking = false;
-  var lastX = window.innerWidth / 2;
-  var lastY = window.innerHeight / 2;
+document.addEventListener('mousemove', function (e) {
+  // center
+  var midX = window.innerWidth / 2;
+  var midY = window.innerHeight / 2;
 
-  document.addEventListener('mousemove', function (e) {
-    lastX = e.clientX;
-    lastY = e.clientY;
+  // degress
+  var rotateY = ((e.clientX - midX) / midX) * 5;
+  var rotateX = ((midY - e.clientY) / midY) * 5;
 
-    if (!tiltTicking) {
-      requestAnimationFrame(applyTilt);
-      tiltTicking = true;
-    }
-  });
-
-  function applyTilt() {
-    // center
-    var midX = window.innerWidth / 2;
-    var midY = window.innerHeight / 2;
-
-    // degress
-    var rotateY = ((lastX - midX) / midX) * 5;
-    var rotateX = ((midY - lastY) / midY) * 5;
-
-    box.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
-    tiltTicking = false;
-  }
-}
+  box.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+});
 
 // toggle between main and os
 var toggleBtn = document.getElementById('toggleBtn');
