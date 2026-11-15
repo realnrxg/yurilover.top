@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yurilover</title>
+<meta name="description" content="An eye upon the infinite. The personal links of nrxg.">
+<meta name="theme-color" content="#080907">
+<link rel="icon" type="image/svg+xml" href="resources/eye.svg">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<main aria-label="Personal links of nrxg">
+<div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="atmosphere" aria-hidden="true"></div>
+<div class="dust" aria-hidden="true"></div>
+<div class="axis" aria-hidden="true"></div>
+<div class="zenith" aria-hidden="true">✧</div>
+<div class="artifact">
+<div class="sculpture" aria-hidden="true"><div class="orbital orbital-outer"></div><div class="orbital orbital-middle"></div><div class="orbital orbital-inner"></div></div>
+<svg aria-hidden="true" class="sigil" viewBox="0 0 1000 1000" fill="none">
+<defs>
+ <linearGradient id="metal" x1=".15" y1="0" x2=".8" y2="1"><stop stop-color="#fff0bd"/><stop offset=".16" stop-color="#b58a41"/><stop offset=".33" stop-color="#3b2710"/><stop offset=".49" stop-color="#eac77e"/><stop offset=".56" stop-color="#fff3c2"/><stop offset=".68" stop-color="#926222"/><stop offset=".86" stop-color="#33240f"/><stop offset="1" stop-color="#c29b50"/></linearGradient>
+ <radialGradient id="glass" cx=".32" cy=".22" r=".79"><stop stop-color="#fff9df" stop-opacity=".4"/><stop offset=".3" stop-color="#ffe1a1" stop-opacity=".03"/><stop offset=".62" stop-color="#050604" stop-opacity="0"/><stop offset=".85" stop-color="#030403" stop-opacity=".5"/><stop offset="1" stop-color="#010201" stop-opacity=".95"/></radialGradient>
+ <radialGradient id="socket" cx=".45" cy=".25" r=".8"><stop stop-color="#a18c52"/><stop offset=".38" stop-color="#44452d"/><stop offset=".7" stop-color="#141b13"/><stop offset="1" stop-color="#020503"/></radialGradient>
+ <linearGradient id="lidSurface" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#796139"/><stop offset=".45" stop-color="#332d1b"/><stop offset="1" stop-color="#0d120b"/></linearGradient>
+ <linearGradient id="reflection" x2=".7" y2="1"><stop stop-color="#fffbe5" stop-opacity=".72"/><stop offset="1" stop-color="#fffbe5" stop-opacity="0"/></linearGradient>
+ <filter id="castShadow" x="-40%" y="-80%" width="180%" height="260%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000" flood-opacity=".9"/></filter>
+ <linearGradient id="gold" x1="200" y1="180" x2="760" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#69502a"/><stop offset=".32" stop-color="#f1d58b"/><stop offset=".52" stop-color="#9d7637"/><stop offset=".75" stop-color="#e7c977"/><stop offset="1" stop-color="#5e4925"/></linearGradient>
+ <radialGradient id="irisGold"><stop stop-color="#b58a3d"/><stop offset=".27" stop-color="#c49a4b"/><stop offset=".34" stop-color="#e4b85b"/><stop offset=".52" stop-color="#78511d"/><stop offset=".77" stop-color="#b49143"/><stop offset=".94" stop-color="#332b13"/><stop offset="1" stop-color="#dcbe6d"/></radialGradient>
+ <radialGradient id="sclera"><stop stop-color="#62532a"/><stop offset=".6" stop-color="#262619"/><stop offset="1" stop-color="#0b0e0b"/></radialGradient>
+ <radialGradient id="aura"><stop stop-color="#ae8739" stop-opacity=".14"/><stop offset="1" stop-color="#ae8739" stop-opacity="0"/></radialGradient>
+ <clipPath id="eyeClip"><path d="M251 500 Q500 270 749 500 Q500 730 251 500Z"/></clipPath>
+</defs>
+<circle cx="500" cy="500" r="490" fill="url(#aura)"/>
+<g class="halo" stroke="url(#gold)">
+ <circle cx="500" cy="500" r="344" stroke-width=".6"/>
+ <circle cx="500" cy="500" r="354" stroke-width=".6" stroke-dasharray="1 9"/>
+ <circle cx="500" cy="500" r="374" stroke-width=".5"/>
+ <g id="haloMarks"></g>
+</g>
+<path class="triangle" d="M500 111L837 695H163Z" stroke="#c4a464" stroke-width="1" stroke-linejoin="round"/>
+<circle id="reactionRipple" cx="500" cy="500" r="130" stroke="#ffe1a0" stroke-width="1" opacity="0"/>
+<g id="rays" stroke="url(#gold)" stroke-linecap="round"></g>
+<g class="inner-orbit" stroke="url(#gold)" opacity=".5">
+ <circle cx="500" cy="500" r="264" stroke-width=".5" stroke-dasharray="190 28 2 28"/>
+ <path d="M500 223v26m0 502v26M223 500h26m502 0h26"/>
+ <path d="M500 230l6 9-6 9-6-9zM500 752l6 9-6 9-6-9z" fill="#c9a957"/>
+</g>
+<g class="living-eye" filter="url(#castShadow)">
+ <path d="M234 507Q500 247 766 507Q500 770 234 507Z" fill="#080b07" stroke="#241b0d" stroke-width="15"/>
+ <path d="M237 498Q500 242 763 498Q500 754 237 498Z" fill="url(#metal)" stroke="url(#metal)" stroke-width="8"/>
+ <path d="M244 499Q500 257 756 499Q500 741 244 499Z" fill="#080c08" stroke="#fff0b0" stroke-opacity=".5" stroke-width="1"/>
+ <path d="M238 499Q500 238 762 499M238 503Q500 758 762 503" stroke="url(#gold)" stroke-width=".7"/>
+ <g class="eye-surface">
+ <path d="M251 500 Q500 270 749 500 Q500 730 251 500Z" fill="url(#socket)"/>
+ <g clip-path="url(#eyeClip)">
+ <g id="gaze">
+ <circle cx="500" cy="500" r="115" fill="url(#irisGold)" stroke="#d6b366" stroke-width="1.5"/>
+ <g id="irisFibers"></g>
+ <circle cx="500" cy="500" r="96" stroke="#e1ba68" stroke-opacity=".4" stroke-width=".8"/>
+ <circle class="pupil" cx="500" cy="500" r="35" fill="#050706" stroke="#d2a959" stroke-width="2"/>
+ <circle cx="500" cy="500" r="114" fill="url(#glass)"/>
+ <g id="reflectionLayer"><path d="M427 457Q452 410 500 415Q472 426 456 465Z" fill="url(#reflection)"/>
+ <ellipse cx="467" cy="439" rx="10" ry="5" fill="#fff8db" opacity=".88" transform="rotate(-32 467 439)"/>
+ <path d="M545 579Q580 562 590 535" stroke="#ebcf87" stroke-width="2" opacity=".45"/></g>
+ <circle cx="525" cy="528" r="4" fill="#ffe9a1" opacity=".45"/>
+ </g>
+ <g fill="url(#lidSurface)">
+  <path id="upperLid" d="M251 500Q500 270 749 500Q500 270 251 500Z"/>
+  <path id="lowerLid" d="M251 500Q500 730 749 500Q500 730 251 500Z"/>
+ </g>
+ <path id="lidEdge" d="M251 500Q500 270 749 500" stroke="url(#gold)" stroke-width="2"/>
+ </g>
+ <path d="M251 500 Q500 270 749 500 Q500 730 251 500Z" stroke="url(#gold)" stroke-width="3"/>
+ <path d="M263 500Q500 288 737 500" stroke="#ffe6a5" stroke-opacity=".4" stroke-width="1"/>
+ </g>
+ <path d="M229 500h21m500 0h21" stroke="#ddbc6a"/>
+</g>
+<g stroke="url(#gold)" stroke-width=".8"><path d="M500 89v34m-17-17h34M500 794v32m-16-16h32"/><circle cx="500" cy="106" r="7"/><path d="M154 695l9-9 9 9-9 9zM828 695l9-9 9 9-9 9z"/></g>
+</svg>
+<button class="eye-trigger" aria-label="Awaken the eye"></button>
+</div>
+<nav class="links" aria-label="Social links">
+      <button class="icon-btn" id="discordBtn" aria-label="Copy discord username">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+      </button>
+      <a class="icon-btn" href="https://codeberg.org/nrxg" target="_blank" rel="noopener" aria-label="Codeberg">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.999.747A11.974 11.974 0 0 0 0 12.75c0 2.254.635 4.465 1.833 6.376L11.837 6.19c.072-.092.251-.092.323 0l4.178 5.402h-2.992l.065.239h3.113l.882 1.138h-3.674l.103.374h3.86l.777 1.003h-4.358l.135.483h4.593l.695.894h-5.038l.165.589h5.326l.609.785h-5.717l.182.65h6.038l.562.727h-6.397l.183.65h6.717A12.003 12.003 0 0 0 24 12.75 11.977 11.977 0 0 0 11.999.747zm3.654 19.104.182.65h5.326c.173-.204.353-.433.513-.65zm.385 1.377.18.65h3.563c.233-.198.485-.428.712-.65zm.383 1.377.182.648h1.203c.356-.204.685-.412 1.042-.648z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://github.com/realnrxg" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://github.com/realnrxg/yurilover.top" target="_blank" rel="noopener" aria-label="View source">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l-6 7 6 7M16 5l6 7-6 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+</nav>
+<div class="nadir" aria-hidden="true"><span></span>✧<span></span></div>
+<p id="status" class="sr-only" role="status"></p>
+</main>
+</body>
+</html>
+
