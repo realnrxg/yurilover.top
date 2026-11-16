@@ -298,3 +298,37 @@ html, body { background: #030405; }
   .wisps, .halo, .inner-orbit, .atmosphere { animation: none; }
   .dust i { box-shadow: none; }
 }
+
+.wings {
+  pointer-events: none;
+  transform-origin: 500px 500px;
+  transform: scale(1.495);
+}
+.wing-reveal {
+  transform-origin: 0 0;
+  animation: unfurl 2.4s cubic-bezier(.16, 1, .3, 1) var(--delay) both;
+}
+.wing-drift {
+  transform-origin: 0 0;
+  animation: wingbeat 6.8s cubic-bezier(.45, 0, .55, 1) var(--beat-delay) infinite;
+}
+@keyframes unfurl {
+  from { opacity: 0; transform: rotate(24deg) scale(.12, .06); }
+  to { opacity: .82; transform: rotate(0) scale(1); }
+}
+@keyframes wingbeat {
+  0%, 100% { transform: rotate(0) scale(1); }
+  40% { transform: rotate(var(--sway)) scale(.94, 1.025); }
+  75% { transform: rotate(0) scale(1.01, .99); }
+}
+@keyframes wingbeat-mobile {
+  0%, 100% { transform: rotate(0); }
+  50% { transform: rotate(2deg); }
+}
+@media (max-width: 600px), (pointer: coarse) {
+  .wings { transform: scale(1.15); }
+  .wing-drift { animation-name: wingbeat-mobile; animation-duration: 10s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wing-reveal { opacity: .82; }
+}

@@ -31,6 +31,23 @@
  <radialGradient id="sclera"><stop stop-color="#535353"/><stop offset=".6" stop-color="#252525"/><stop offset="1" stop-color="#0d0d0d"/></radialGradient>
  <radialGradient id="aura"><stop stop-color="#8a8a8a" stop-opacity=".14"/><stop offset="1" stop-color="#8a8a8a" stop-opacity="0"/></radialGradient>
  <clipPath id="eyeClip"><path d="M251 500 Q500 270 749 500 Q500 730 251 500Z"/></clipPath>
+
+ <linearGradient id="wingIvory" x1="25" y1="30" x2="335" y2="-85" gradientUnits="userSpaceOnUse"><stop stop-color="#080a0d"/><stop offset=".35" stop-color="#303640"/><stop offset=".78" stop-color="#a8aeb7"/><stop offset="1" stop-color="#f1f2ed"/></linearGradient>
+ <g id="featheredWing" fill="url(#wingIvory)" stroke="#dbe0ea" stroke-opacity=".4" stroke-width=".8">
+ <path d="M28 -5Q255 -180 350 -155Q305 -123 42 11Z"/>
+ <path d="M38 -2Q240 -152 335 -127Q290 -95 52 14Z"/>
+ <path d="M48 1Q225 -124 320 -99Q275 -67 62 17Z"/>
+ <path d="M58 4Q210 -96 305 -71Q260 -39 72 20Z"/>
+ <path d="M68 7Q195 -68 290 -43Q245 -11 82 23Z"/>
+ <path d="M78 10Q180 -40 275 -15Q230 17 92 26Z"/>
+ <path d="M88 13Q165 -12 260 13Q215 45 102 29Z"/>
+ <path d="M98 16Q150 16 245 41Q200 73 112 32Z"/>
+ <path d="M108 19Q135 44 230 69Q185 101 122 35Z"/>
+ <path d="M118 22Q120 72 215 97Q170 129 132 38Z"/>
+ <path d="M128 25Q105 100 200 125Q155 157 142 41Z"/>
+ <path d="M0 0Q91-94 199-107Q266-119 350-155Q253-66 180-41Q90 24 0 0Z" stroke-opacity=".65"/>
+ <path d="M18-1Q151-63 285-113" fill="none" stroke-opacity=".35"/>
+ </g>
 </defs>
 <circle cx="500" cy="500" r="490" fill="url(#aura)"/>
 <g class="wisps" stroke="#a8aeb8" stroke-width=".8" opacity=".12"><path transform="rotate(0.0 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(25.714285714285715 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(51.42857142857143 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(77.14285714285714 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(102.85714285714286 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(128.57142857142858 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(154.28571428571428 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(180.0 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(205.71428571428572 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(231.42857142857142 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(257.14285714285717 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(282.85714285714283 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(308.57142857142856 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/><path transform="rotate(334.2857142857143 500 500)" d="M500 264C405 233 551 172 471 137C423 113 461 85 487 76M508 255C423 223 567 170 484 133"/></g>
@@ -47,6 +64,14 @@
  <circle cx="500" cy="500" r="264" stroke-width=".5" stroke-dasharray="190 28 2 28"/>
  <path d="M500 223v26m0 502v26M223 500h26m502 0h26"/>
  <path d="M500 230l6 9-6 9-6-9zM500 752l6 9-6 9-6-9z" fill="#aaaaaa"/>
+</g>
+<g class="wings">
+<g transform="translate(500 500) scale(-1 1) rotate(-48)"><g class="wing-reveal" style="--delay:0.35s"><g class="wing-drift" style="--sway:6deg;--beat-delay:2.8s"><use href="#featheredWing"/></g></g></g>
+<g transform="translate(500 500) scale(-1 1) rotate(0)"><g class="wing-reveal" style="--delay:0.51s"><g class="wing-drift" style="--sway:-6deg;--beat-delay:3.15s"><use href="#featheredWing"/></g></g></g>
+<g transform="translate(500 500) scale(-1 1) rotate(48)"><g class="wing-reveal" style="--delay:0.67s"><g class="wing-drift" style="--sway:8deg;--beat-delay:3.5s"><use href="#featheredWing"/></g></g></g>
+<g transform="translate(500 500) scale(1 1) rotate(-48)"><g class="wing-reveal" style="--delay:0.35s"><g class="wing-drift" style="--sway:6deg;--beat-delay:2.8s"><use href="#featheredWing"/></g></g></g>
+<g transform="translate(500 500) scale(1 1) rotate(0)"><g class="wing-reveal" style="--delay:0.51s"><g class="wing-drift" style="--sway:-6deg;--beat-delay:3.15s"><use href="#featheredWing"/></g></g></g>
+<g transform="translate(500 500) scale(1 1) rotate(48)"><g class="wing-reveal" style="--delay:0.67s"><g class="wing-drift" style="--sway:8deg;--beat-delay:3.5s"><use href="#featheredWing"/></g></g></g>
 </g>
 <g class="living-eye">
  <g class="lashes" fill="#f4f4f0">
@@ -110,4 +135,5 @@
 </main>
 </body>
 </html>
+
 
